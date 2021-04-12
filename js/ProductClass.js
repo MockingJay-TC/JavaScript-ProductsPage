@@ -31,7 +31,7 @@ class Product {
                 <li class="brown"></li>
             </ul>
         </div>
-        <p>${this.stock}</p>
+        <p class="stock"> Stock: ${this.stock}</p>
         <button id="add">Add to Cart</button>
         <button id="do">Remove Item</button>
         </div>
