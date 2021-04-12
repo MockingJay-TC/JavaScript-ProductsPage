@@ -22,6 +22,15 @@ class Product {
         </div>
 
         <div class = "theRight"> 
+        <div class="color">
+            <ul>
+                <li>Color:</li>
+                <li class="black"></li>
+                <li class="white"></li>
+                <li class="blue"></li>
+                <li class="brown"></li>
+            </ul>
+        </div>
         <p>${this.stock}</p>
         <button id="add">Add to Cart</button>
         <button id="do">Remove Item</button>
