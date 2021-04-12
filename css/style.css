@@ -42,12 +42,26 @@
   cursor: pointer;
 }
 .click {
+  outline: none;
   border: none;
   background: #fff;
   padding: 20px;
   font-size: 1.2rem;
   line-height: 30px;
+  border: 1px solid white;
 }
 .click:hover{
-  border: 
+  border: 1px solid black;
+}
+.container{
+  width: 90%;
+  margin: ;
+  background: #ececec;
+  /* border: 3px solid red; */
+}
+.card{
+  margin: 20px auto;
+  /* border: 3px solid green;  */
+  width: 90%;
+  box-shadow: 0px 0px 15px 0.3px rgba(0, 0, 0, 0.2);
 }

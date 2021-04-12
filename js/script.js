@@ -31,7 +31,7 @@ navigation.innerHTML = `<li>Home</li>
                         <li>About</li>
                         <li>Products</li>
                         `;
-cart.innerHTML =    `  
+cart.innerHTML = `  
                     <button class="click">
                     <i class="fas fa-shopping-cart"></i>
                     <put>(<pin>3</pin>)</put>
@@ -39,11 +39,12 @@ cart.innerHTML =    `
                     `;
 
 // Container
-card.append(title,price, stock, description, imageUrl, btnElement);
+title.innerText = "Gaming Headset";
+description.innerText = "Enjoy a seamless, wireless experience with a headset fine-tuned for 3D Audio on PS5 consoles1. The PULSE 3D wireless headset features a refined design with dual noise-cancelling microphones, USB Type-C® charging, and an array of easy-access controls."
 
+card.append(title, price, stock, description, imageUrl, btnElement);
 
 container.append(card);
-
 
 navbar.append(heading, navigation, cart);
 scaffold.append(navbar, container);
