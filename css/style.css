@@ -4,42 +4,49 @@
   list-style: none;
   box-sizing: border-box;
   font-family: Fira Code;
-  align-items: center;
-  justify-content: center;
 }
+
 #root {
   width: 100vw;
 }
 
-.navbar{
+.navbar {
   display: flex;
   background-color: #ffffff;
-  align-items: center;
+  justify-content: center;
   box-shadow: 0px 0px 10px 0.1px rgba(0, 0, 0, 0.3);
   color: #262626;
-  z-index: 2
+  z-index: 10;
+  border: 1px solid blue;
 }
-.navbar h2{
+.navbar h2 {
   padding: 20px;
   font-size: 1.5rem;
   cursor: pointer;
   color: 0px 0px 10px 0.1px;
   font-weight: 500;
 }
-.navbar ul{
+.navbar ul {
   display: flex;
   line-height: 40px;
   text-align: right;
   align-items: right;
   justify-content: right;
 }
-.navbar ul li{
+.navbar ul li {
   padding: 20px;
   font-size: 1.2rem;
   text-align: right;
   align-items: right;
   justify-content: right;
   cursor: pointer;
+}
+.cart {
+  align-items: right;
+  justify-content: right;
+  border: 1px solid red;
+  text-align: end;
+  /* align-self: end; */
 }
 .click {
   outline: none;
@@ -50,18 +57,22 @@
   line-height: 30px;
   border: 1px solid white;
 }
-.click:hover{
+.click:hover {
   border: 1px solid black;
 }
-.container{
+.container {
   width: 90%;
-  margin: ;
+  margin: auto;
   background: #ececec;
-  /* border: 3px solid red; */
+  border: 10px solid #ececec;
 }
-.card{
+.card {
   margin: 20px auto;
+  background: #fff;
   /* border: 3px solid green;  */
   width: 90%;
   box-shadow: 0px 0px 15px 0.3px rgba(0, 0, 0, 0.2);
+}
+.imageurl {
+  width: 300px;
 }
