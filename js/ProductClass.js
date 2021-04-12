@@ -11,13 +11,27 @@ class Product {
         let card = document.createElement('div');
         card.className = 'card';
         card.innerHTML = `
+        <div class = "theLeft">  
         <h2 class="title">${this.title}</h2>
-        <span>${this.price}</span>
-        <img class= "imageurl" src="${this.imageUrl}"></img>
         <p>${this.description}</p>
+        </div>
+
+        <div class = "theMiddle">  
+        <img class= "imageurl" src="${this.imageUrl}"></img>
+        <h5 class="price">${this.price}</h5>
+        </div>
+
+        <div class = "theRight"> 
         <p>${this.stock}</p>
-        <button>Add to Cart</button>
-        <button>Remove Item</button>
+        <button id="add">Add to Cart</button>
+        <button id="do">Remove Item</button>
+        </div>
+        
+        
+        
+        
+
+        <div class="closeIt"><i class="fas fa-trash"></i></div>
         `
         return card;
     }

@@ -3,6 +3,8 @@ let scaffold = document.getElementById("root");
 let navbar = document.createElement("div");
 let container = document.createElement("div");
 let cart = document.createElement("div");
+let detail = document.createElement("div");
+
 
 function clickMe(){
     console.log("clicked");}
@@ -12,6 +14,7 @@ function clickMe(){
 navbar.className = "navbar";
 container.className = "container";
 cart.className = "cart";
+detail.className = "detail";
 
 // creating navbar
 let heading = document.createElement("h2");
@@ -29,8 +32,17 @@ cart.innerHTML = `
                     </button>
                     `;
 
+// creating the container and adding card
+
+detail.innerHTML =  `
+                        <div class="leftSide"><h3> Home<span>/Product Details </span> <h3></div>
+                        <div class="middle">  <h1> Product Details </h1> </div>
+                        <div class="rightSide"> <h3>Next Product int the</h3>
+                    `
+
 navbar.append(heading, navigation, cart);
 scaffold.append(navbar, container);
+container.append(detail);
 
 items.map(myItem => {
     container.append(myItem.renderProduct());
