@@ -18,16 +18,18 @@
   box-shadow: 0px 0px 10px 0.1px rgba(0, 0, 0, 0.3);
   color: #262626;
   z-index: 10;
-  /* position: fixed; */
 }
 .navbar h2 {
   padding: 20px;
   font-size: 1.5rem;
   cursor: pointer;
-  color: 0px 0px 10px 0.1px;
+  color: #2f2f2f;
   font-weight: 500;
-
   margin: auto;
+}
+.navbar a {
+  text-decoration: none;
+  color: #2f2b2b;
 }
 .navbar ul {
   display: flex;
@@ -40,6 +42,10 @@
   align-items: right;
   justify-content: right;
   cursor: pointer;
+  text-decoration: none;
+}
+.navbar li a:hover {
+  color: #008aff;
 }
 .cart {
   justify-content: right;
@@ -59,6 +65,7 @@
   border: 2px solid black;
 }
 .container {
+  /* position: relative; */
   width: 90%;
   margin: auto;
   background: #ececec;
@@ -81,7 +88,6 @@
   border-radius: 50%;
 }
 
-
 .detail {
   display: flex;
   align-items: baseline;
@@ -94,6 +100,9 @@
   font-size: 1.2rem;
   font-weight: 400;
   margin: auto;
+}
+.leftSide span {
+  color: #008aff;
 }
 
 .middle {
@@ -120,7 +129,7 @@
   transition: 0.6s ease-out;
 }
 .closeIt:hover {
-  background: tomato;;
+  background: tomato;
   color: white;
   font-size: 1.6rem;
   border: 4px solid tomato;
@@ -130,7 +139,6 @@
 }
 
 .theLeft {
-
   margin: auto;
 }
 .theMiddle {
@@ -144,27 +152,23 @@
   border-bottom: 2px solid #ececec;
   border-top: 2px solid #ececec;
   transition: 0.6s ease-in-out;
-
 }
-.theMiddle:hover{
-  border-top: 2px solid #008aff;
-  border-bottom: 2px solid #008aff;
+.theMiddle:hover {
+  /* border-top: 2px solid #008aff;
+  border-bottom: 2px solid #008aff; */
   transition: 0.6s ease-in-out;
 }
-.theMiddle:hover .imageurl{
+.theMiddle:hover .imageurl {
   transform: rotate(360deg);
   transition: 2s ease-in-out;
 }
-.theMiddle:hover .price{
+.theMiddle:hover .price {
   font-weight: 500;
-  transition:0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 .theRight {
-
   margin: auto;
-
 }
-
 
 .price {
   position: absolute;
@@ -172,66 +176,70 @@
   transform: translate(-50%);
   font-size: 1.5rem;
   font-weight: 400;
-  transition:0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
-.color ul{
+.color li:first-child {
+  font-size: 1.2rem;
+}
+.color ul {
   display: flex;
-  line-height: 20px;
+  line-height: 25px;
   /* justify-content: center; */
   align-items: center;
   margin: 15px 0;
 }
-.color li{
+.color li:nth-child(n + 2) {
   cursor: pointer;
+  margin: 0 10px;
 }
-.black{
+.black {
   background-color: black;
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
   padding: 0px 2px;
   margin: 5px;
   border: 1px solid black;
   box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.3);
 }
-.brown{
+.brown {
   background-color: brown;
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
   padding: 0px 2px;
   margin: 5px;
   border: 1px solid brown;
   box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.3);
-
 }
-.white{
-  background-color: white;
-  height: 20px;
-  width: 20px;
+.green {
+  background-color: green;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
   padding: 0px 2px;
   margin: 5px;
-  border: 1px solid white;
+  border: 1px solid green;
   box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.4);
-
 }
-.blue{
+.blue {
   background-color: cornflowerblue;
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
   padding: 0px 2px;
   margin: 5px;
   border: 1px solid cornflowerblue;
   box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.4);
-
 }
-.white:hover, .brown:hover, .black:hover, .blue:hover{
-  width: 22px;
-  height: 22px;
+.white:hover,
+.brown:hover,
+.black:hover,
+.blue:hover {
+  width: 25px;
+  height: 25px;
 }
-#add {
+.per {
   padding: 10px;
   background: #008aff;
   border-radius: 5px;
@@ -243,15 +251,13 @@
   border: 2px solid #008aff;
   font-size: 1rem;
   transition: 0.6s ease-out;
-
 }
-#add:hover{
+.per:hover {
   border: 2px solid #014f92;
   background: #014f92;
   transition: 0.6s ease-in;
-
 }
-#do{
+.rem {
   padding: 10px;
   background: #008aff;
   border-radius: 5px;
@@ -264,15 +270,41 @@
   font-size: 1rem;
   transition: 0.6s ease-out;
 }
-#do:hover{
+.rem:hover {
   border: 2px solid tomato;
   background: tomato;
   transition: 0.6s ease-in;
-
 }
-.stock{
+.stock {
   margin: 15px 0px;
+  color: tomato;
+  font-size: 1.2rem;
 }
-.title{
+.title {
   margin: 15px 0;
 }
+
+.upside {
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 700px;
+  left: 50px;
+  transition: 0.6s ease-in-out;
+}
+.upside:hover {
+  transform: rotate(90deg);
+  transition: 0.6s ease-in-out;
+}
+
+.downside {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 700px;
+  right: 40px;
+  transition: 0.6s ease-in-out;
+}
+.downside:hover {
+  transform: rotate(-90deg);
+  transition: 0.6s ease-in-out;
+}
+/* Victor.Aremu */
