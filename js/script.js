@@ -37,6 +37,8 @@ cart.innerHTML = `
 detail.innerHTML =  `
                         <div class="leftSide"><h3> Home<span>/Product Details </span> <h3></div>
                         <div class="middle">  <h1> Product Details </h1> </div>
+                        <p class="upside">  scroll to down</p>
+                        <p class="upside">scroll to down</p>
                         <div class="rightSide"> <h3>Next Product int the</h3>
                     `
 
@@ -47,3 +49,15 @@ container.append(detail);
 items.map(myItem => {
     container.append(myItem.renderProduct());
 })
+addEventListener();
+
+function addEventListener(){
+    items.map(myItem => {
+        myItem.getRemoveButton().addEventListener('click', ()=>{
+            items = items.filter((item)=>{
+               return item.id !== myItem.id;
+            })
+            ItemMe.reRender();
+        });
+    })
+}
